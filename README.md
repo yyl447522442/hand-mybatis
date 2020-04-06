@@ -22,6 +22,9 @@
     封装与JDBC实际的操作，即query、insert、update、delete<br/>
 <br/>
 
+测试方法入口类:<br/>
+com.yyl.test.ResourceTest<br/>
+<br/>
 数据库如下<br/>
 create database zdy_mybatis;<br/>
 CREATE TABLE `user` (<br/>
