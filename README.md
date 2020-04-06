@@ -19,3 +19,13 @@
     
 6、创建Executor接口及实现类SimpleExecutor
     封装与JDBC实际的操作，即query、insert、update、delete
+
+
+数据库如下
+create database zdy_mybatis;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
