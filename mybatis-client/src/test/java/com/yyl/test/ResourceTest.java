@@ -8,6 +8,7 @@ import com.yyl.sqlsession.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
 import java.io.InputStream;
+import java.util.List;
 
 public class ResourceTest {
     @Test
@@ -19,6 +20,8 @@ public class ResourceTest {
         user.setId(1);
         User o = sqlSession.selectOne("com.yyl.mybatis.mapper.UserMapper.queryUser", user);
         System.out.println(o.toString());
+        List<User> objects = sqlSession.selectList("com.yyl.mybatis.mapper.UserMapper.queryUserList", user);
+        System.out.println(objects.toString());
     }
 
 
