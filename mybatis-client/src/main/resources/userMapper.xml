@@ -1,0 +1,8 @@
+<mapper namespace="com.yyl.mybatis.mapper.UserMapper">
+    <select id="queryUserList" resultType="com.yyl.mybatis.domain.User">
+        select * from user
+    </select>
+    <select  id="queryUser" paramType="com.yyl.mybatis.domain.User" resultType="com.yyl.mybatis.domain.User">
+        select * from user where id =#{id}
+    </select>
+</mapper>
