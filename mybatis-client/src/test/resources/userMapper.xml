@@ -1,4 +1,4 @@
-<mapper namespace="com.yyl.mybatis.mapper.UserMapper">
+<mapper namespace="com.yyl.mybatis.dao.UserMapper">
     <select id="queryUserList" resultType="com.yyl.mybatis.domain.User">
         select * from user
     </select>

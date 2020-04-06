@@ -33,3 +33,9 @@ CREATE TABLE `user` (<br/>
   PRIMARY KEY (`id`)<br/>
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;<br/>
 
+问题优化：<br/>
+1、数据库连接为持久化优化<br/>
+2、存在硬编码问题，statementid<br/>
+
+解决方法：
+使用代理模式生成dao层代理实现类，控制dao接口的访问<br/>
